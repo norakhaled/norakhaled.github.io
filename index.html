@@ -2,6 +2,13 @@
 <html>
 
   <head>
+    <script>
+function show(shown, hidden) {
+  document.getElementById(shown).style.display='block';
+  document.getElementById(hidden).style.display='none';
+  return false;
+}
+</script>
     <meta charset='utf-8'>
     <meta http-equiv="X-UA-Compatible" content="chrome=1">
     <meta name="description" content="The Jeweler : Makers of The Best Jewelery">
@@ -14,7 +21,7 @@
   <body>
 
     <!-- HEADER -->
-    <div id="header_wrap" class="outer">
+    <div id="Page1" class="outer">
         <header class="inner">
           <a id="forkme_banner" href="https://github.com/norakhaled">View on GitHub</a>
 
@@ -51,14 +58,24 @@ All of our jewelry are hand made and we have been collaborating with the best de
 
 <p>*instagram: <a href="https://instagram.com/the_jeweler__/">the_jeweler__</a></p>
       </section>
+          <a href="#" onclick="return show('Page2','Page1');">Show page 2</a>
+
     </div>
 
-    <!-- FOOTER  -->
-    <div id="footer_wrap" class="outer">
-      <footer class="inner">
-        <p>Published with <a href="https://pages.github.com">GitHub Pages</a></p>
-      </footer>
-    </div>
+   
+      <div id="Page2" style="display:none">
+         <section id="page_content" class="inner">
+ <h3>
+<a id="contact-us" class="anchor" href="#contact-us" aria-hidden="true"><span class="octicon octicon-link"></span></a>contact us</h3>
+
+<p>you can contact us at <a href="mailto:nura.g@live.com">nura.g@live.com</a></p>
+
+<p>*Twitter: <a href="https://twitter.com/The_jeweler_">@The_jeweler_</a></p>
+
+<p>*instagram: <a href="https://instagram.com/the_jeweler__/">the_jeweler__</a></p>
+      </section>
+    <a href="#" onclick="return show('Page1','Page2');">Show page 1</a>
+  </div>
 
     
 
