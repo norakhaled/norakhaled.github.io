@@ -34,9 +34,9 @@ a:hover, a:active {
 <body>
 
 <ul>
-  <li><a href="#" onclick="return show('main_content_wrap');">Home</a>
-  <li><a href="#" onclick="return show('Page2');">Order Form</a>
-  <li><a href="#" onclick="return show('Page3','Page2');">Page3</a>
+  <li><a href="#" onclick="return show('main_content_wrap','Page2','Page3');">Home</a>
+  <li><a href="#" onclick="return show('Page2','main_content_wrap');">Order Form</a>
+  <li><a href="#" onclick="return show('main_content_wrap','Page3','Page2');">Page3</a>
   <li><a href="http://www.dolcevie.co/search/label/%D8%A7%D9%84%D8%AA%D9%82%D9%86%D9%8A%D8%A9">Our Blog</a></li>
   <li><a href="https://twitter.com/The_jeweler_">Twitter</a></li>
 
@@ -107,8 +107,7 @@ All of our jewelry are hand made and we have been collaborating with the best de
 </section>
   </div>
   <div id="Page3" style="display:none" class="outer">
-  <section id="main_content" class="inner">
-<div id="cp_widget_99e297dd-6ee9-45c9-b5ba-ce6a84d9485a">...</div><script type="text/javascript">
+  <section id="main_content" class="inner">...</div><script type="text/javascript">
 var cpo = []; cpo["_object"] ="cp_widget_99e297dd-6ee9-45c9-b5ba-ce6a84d9485a"; cpo["_fid"] = "AsPA158LUomW";
 var _cpmp = _cpmp || []; _cpmp.push(cpo);
 (function() { var cp = document.createElement("script"); cp.type = "text/javascript";
