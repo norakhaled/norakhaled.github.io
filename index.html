@@ -69,14 +69,19 @@ a:hover, a:active {
 </head>
 <body>
 
-<ul>
-  <li><a href="#" onclick="return show('main_content_wrap','Page2');">Home</a>
-  <li><a href="#" onclick="return show('Page2','main_content_wrap');">Gallery</a>
-  <li><a href="https://docs.google.com/forms/d/1agSz91lsPYnFrCXOeGfKsl2n1QOGkWfaKMOD48JuUAw/viewform?usp=send_form" target="_blank">Order Form</a></li>
-  <li><a href="http://www.dolcevie.co/search/label/%D8%A7%D9%84%D8%AA%D9%82%D9%86%D9%8A%D8%A9" target="_blank">Our Blog</a></li>
-  <li><a href="https://twitter.com/The_jeweler_" target="_blank">Twitter</a></li>
-
+<div class='nav-collapse collapse'>
+ <ul class='nav' id='menu-primary'>
+ <li><a class='act'  href="#" onclick="return show('main_content_wrap','Page2');">Home</a>
+ <li><a href="#" onclick="return show('Page2','main_content_wrap');">Gallery</a>
+ <li><a class='act'  href="https://docs.google.com/forms/d/1agSz91lsPYnFrCXOeGfKsl2n1QOGkWfaKMOD48JuUAw/viewform?usp=send_form" target="_blank">Order Form</a></li>
+ <li class='dropdown'><a class='dropdown-toggle' data-toggle='dropdown' href='#'>Social Media<i class='icon-angle-down'/></a>
+<ul class='dropdown-menu'>
+ <li><a href='https://twitter.com/The_jeweler_' target="_blank">Twitter</a></li>
+ <li><a href='https://instagram.com/the_jeweler__/'target="_blank">instagram</a></li>
 </ul>
+</li>
+ </ul>
+</div>
 
 </body>
     </div>
